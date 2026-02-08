@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aman Bhateriya - Web Development for Small Businesses</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image/png" href="./assets/images/logo/white.png" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div class="logo">AMAN BHATERIYA</div>
+      <a
+        href="https://wa.me/7990702137?text=Hi%20Aman,%20I%20am%20interested%20in%20getting%20a%20website%20built%20for%20my%20business."
+        target="_blank"
+        class="resume-btn whatsapp-btn"
+      >
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          style="margin-right: 8px"
+        >
+          <path
+            d="M20.52 3.48A11.87 11.87 0 0012.03 0C5.39 0 .03 5.36.03 12c0 2.11.55 4.17 1.59 5.98L0 24l6.19-1.61A11.94 11.94 0 0012.03 24c6.64 0 12-5.36 12-12 0-3.2-1.25-6.21-3.51-8.52z"
+          />
+        </svg>
+        Get in Touch
+      </a>
+    </header>
+
+    <main class="main">
+      <!-- HERO -->
+      <section class="hero">
+        <div id="title">
+          <p class="intro">Custom Websites for</p>
+          <h1 class="big-title">Small Businesses.</h1>
+        </div>
+        <p class="desc">
+          Professional web development that helps local businesses stand out
+          online. Clean designs, fast performance, and built to grow your
+          business.
+        </p>
+
+        <div class="tech-stack">
+          <span>Custom Design</span>
+          <span>Mobile-First</span>
+          <span>SEO Optimized</span>
+          <span>Fast Loading</span>
+          <span>Easy Updates</span>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="projects">
+        <div class="projects-header">
+          <h2 class="projects-title">Demo Websites</h2>
+          <p class="projects-subtitle">
+            Scroll horizontally to explore my recent work
+          </p>
+        </div>
+
+        <div class="projects-scroll" id="projectsScroll">
+          <!-- PROJECT 1 - Real Estate -->
+          <div class="project-slide">
+            <div class="project-slide-inner">
+              <div class="project-info">
+                <h2>UrbanNest Realty</h2>
+                <p class="project-desc">
+                  Premium real estate website designed to showcase properties
+                  and generate qualified leads.
+                </p>
+                <p class="tech">
+                  Property Listings • Filter System • Lead Forms • Mobile
+                  Optimized
+                </p>
+              </div>
+              <div class="project-image" onclick="openDemo('real-estate')">
+                <img
+                  src="./assets/images/realEstate_demo.jpg"
+                  alt="Real Estate Website"
+                />
+                <div class="project-overlay">
+                  <span class="view-text">View Site</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 2 - Clinic -->
+          <div class="project-slide">
+            <div class="project-slide-inner">
+              <div class="project-info">
+                <h2>CarePlus Clinic</h2>
+                <p class="project-desc">
+                  Professional healthcare website focused on patient trust and
+                  appointment bookings.
+                </p>
+                <p class="tech">
+                  Appointment Form • Doctor Profiles • Services Section •
+                  WhatsApp Integration
+                </p>
+              </div>
+              <div class="project-image" onclick="openDemo('clinic')">
+                <img
+                  src="./assets/images/clinic_demo.jpg"
+                  alt="Clinic Website"
+                />
+                <div class="project-overlay">
+                  <span class="view-text">View Site</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT 3 - Travel Agency -->
+          <div class="project-slide">
+            <div class="project-slide-inner">
+              <div class="project-info">
+                <h2>WanderLux Travels</h2>
+                <p class="project-desc">
+                  Modern travel agency website built to highlight tour packages
+                  and drive enquiries.
+                </p>
+                <p class="tech">
+                  Tour Packages • WhatsApp Enquiry • Responsive Design • Smooth
+                  Animations
+                </p>
+              </div>
+              <div class="project-image" onclick="openDemo('travel')">
+                <img
+                  src="./assets/images/travel_demo.jpg"
+                  alt="Travel Agency Website"
+                />
+                <div class="project-overlay">
+                  <span class="view-text">View Site</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+          <div class="scroll-track">
+            <div class="scroll-progress" id="scrollProgress"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES SECTION -->
+      <section class="services">
+        <div class="services-content">
+          <h2 class="services-title">What I Offer</h2>
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">🎨</div>
+              <h3>Custom Design</h3>
+              <p>
+                Unique websites tailored to your brand, not cookie-cutter
+                templates
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">📱</div>
+              <h3>Mobile-First</h3>
+              <p>Looks perfect on phones, tablets, and desktops</p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">⚡</div>
+              <h3>Fast Performance</h3>
+              <p>Quick loading times that keep visitors engaged</p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">🔍</div>
+              <h3>SEO Ready</h3>
+              <p>Built to help customers find you on Google</p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">🔧</div>
+              <h3>Easy Updates</h3>
+              <p>Simple content management, no technical skills needed</p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">💬</div>
+              <h3>Ongoing Support</h3>
+              <p>I'm here to help even after your site launches</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p class="footer-text">Ready to grow your business online?</p>
+        <div class="footer-links">
+          <a
+            href="https://linkedin.com/in/amanbhateriya"
+            target="_blank"
+            rel="noopener"
+            class="footer-link"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              ></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+          <a
+            href="https://github.com/aman7804"
+            target="_blank"
+            rel="noopener"
+            class="footer-link"
+          >
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+              ></path>
+            </svg>
+            <span>GitHub</span>
+          </a>
+          <a href="mailto:bhateriyaaman@gmail.com" class="footer-link">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              ></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>Email Me</span>
+          </a>
+          <a
+            href="https://wa.me/7990702137?text=Hi%20Aman,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20website%20project."
+            target="_blank"
+            class="footer-link"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.52 3.48A11.87 11.87 0 0012.03 0C5.39 0 .03 5.36.03 12c0 2.11.55 4.17 1.59 5.98L0 24l6.19-1.61A11.94 11.94 0 0012.03 24c6.64 0 12-5.36 12-12 0-3.2-1.25-6.21-3.51-8.52z"
+              />
+            </svg>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+        <p class="footer-copyright">
+          © 2024 Aman Bhateriya • Web Development for Small Businesses
+        </p>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
