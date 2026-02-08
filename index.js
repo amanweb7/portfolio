@@ -1,8 +1,8 @@
 function openContact() {
   // Open email client or navigate to contact section
-  window.location.href = "mailto:bhateriyaaman@gmail.com?subject=Website Inquiry";
+  window.location.href =
+    "mailto:bhateriyaaman@gmail.com?subject=Website Inquiry";
 }
-
 
 // Scroll indicator functionality
 document.addEventListener("DOMContentLoaded", function () {
